@@ -4,7 +4,7 @@ from data import COCO, DataLoader
 import evaluation
 from evaluation import PTBTokenizer, Cider
 #from models.transformer import Transformer, MemoryAugmentedEncoder, MeshedDecoder, ScaledDotProductAttentionMemory
-from models.SDATR import Transformer, TransformerEncoder, TransformerDecoderLayer, \
+from models.DTNet import Transformer, TransformerEncoder, TransformerDecoderLayer, \
     ScaledDotProductAttention
 import torch
 from torch.optim import Adam
@@ -22,9 +22,6 @@ from models.augmentation import ImageAugmentation
 
 # os.environ['CUDA_VISIBLE_DEVICES']='0'
 
-random.seed(19890511)
-torch.manual_seed(19890511)
-np.random.seed(19890511)
 
 
 def evaluate_loss(model, dataloader, loss_fn, text_field):
@@ -149,8 +146,8 @@ def train_scst(model, dataloader, optim, cider, text_field):
 
 if __name__ == '__main__':
     device = torch.device('cuda')
-    parser = argparse.ArgumentParser(description='Semantic-enhanced Dual Attention Transformer')
-    parser.add_argument('--exp_name', type=str, default='SDATR')
+    parser = argparse.ArgumentParser(description='DTNet')
+    parser.add_argument('--exp_name', type=str, default='DTNet')
     parser.add_argument('--batch_size', type=int, default=50)
     parser.add_argument('--rl_batch_size', type=int, default=100)
     parser.add_argument('--workers', type=int, default=4)
@@ -165,7 +162,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     print(args)
 
-    print('Meshed-Memory Transformer Training')
+    print('DTNetTraining')
     ia=ImageAugmentation()
 
     writer = SummaryWriter(log_dir=os.path.join(args.logs_folder, args.exp_name))

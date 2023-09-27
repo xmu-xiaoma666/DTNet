@@ -3,7 +3,7 @@ from data import ImageDetectionsField, TextField, RawField
 from data import COCO, DataLoader
 import evaluation
 #from models.transformer import Transformer, MemoryAugmentedEncoder, MeshedDecoder, ScaledDotProductAttentionMemory
-from models.SDATR import Transformer, TransformerEncoder, TransformerDecoderLayer, \
+from models.DTNet import Transformer, TransformerEncoder, TransformerDecoderLayer, \
     ScaledDotProductAttention
 import torch
 from tqdm import tqdm
@@ -48,16 +48,16 @@ def predict_captions(model, dataloader, text_field):
 if __name__ == '__main__':
     device = torch.device('cuda')
 
-    parser = argparse.ArgumentParser(description='Semantic-enhanced Dual Attention Transformer')
+    parser = argparse.ArgumentParser(description='DTNet')
     parser.add_argument('--batch_size', type=int, default=5)
     parser.add_argument('--workers', type=int, default=0)
-    parser.add_argument('--exp_name', default='')
+    parser.add_argument('--exp_name', default='DTNet')
     parser.add_argument('--m', type=int, default=40)
     parser.add_argument('--features_path', type=str,default='/home/data/coco_grid_feats2.hdf5')
     parser.add_argument('--annotation_folder', type=str,default='/home/data/m2_annotations')
     args = parser.parse_args()
 
-    print('Semantic-enhanced Dual Attention Transformer Evaluation')
+    print('DTNet Evaluation')
 
     # Pipeline for image regions
     image_field = ImageDetectionsField(detections_path=args.features_path, max_detections=49, load_in_tmp=False)
