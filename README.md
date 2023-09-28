@@ -29,7 +29,7 @@ Please refer to [meshed-memory-transformer](https://github.com/aimagelab/meshed-
 ## Data preparation
 
 * **Annotation**. Download the annotation file [annotation.zip](https://drive.google.com/file/d/1i8mqKFKhqvBr8kEp3DbIh9-9UNAfKGmE/view?usp=sharing). Extarct and put it in the project root directory.
-* **Feature**. You can download our ResNeXt-101 feature (hdf5 file) [here](https://pan.baidu.com/s/1xVZO7t8k4H_l3aEyuA-KXQ). Acess code: jcj6.
+* **Feature**. You can download our ResNeXt-101 feature (hdf5 file) [here](https://stuxmueducn-my.sharepoint.com/:u:/g/personal/yiweima_stu_xmu_edu_cn/EaDasDMk45BFnLBFGFBAFvkB_xKBmZzqtUPzGi9M2RfrUA?e=ex7hgU) and ResNeXT-152 feature (hdf5 file) [here](). 
 * **evaluation**. Download the evaluation tools [here](https://stuxmueducn-my.sharepoint.com/:u:/g/personal/yiweima_stu_xmu_edu_cn/EYK5z8rM6PRLmqG0amlvmHkB3JdpbyxDAdX-9-PgBI65zg?e=CeEf9C). Extarct and put it in the project root directory.
 
 ## Training
