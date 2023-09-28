@@ -38,7 +38,7 @@ python train.py --exp_name DTNet --batch_size 50 --rl_batch_size 100 --workers 4
 ```
 ## Evaluation
 ```python
-python eval.py --batch_size 50 --exp_name DTNet --features_path /home/data/coco_grid_feats2.hdf5 --annotation /home/data/m2_annotations
+python eval.py --batch_size 50 --exp_name DTNet --features_path /home/data/coco_grid_feats2.hdf5 --annotation /home/data/m2_annotations --ckpt_path your_model_path
 ```
 
 ## Performance

@@ -55,6 +55,8 @@ if __name__ == '__main__':
     parser.add_argument('--m', type=int, default=40)
     parser.add_argument('--features_path', type=str,default='/home/data/coco_grid_feats2.hdf5')
     parser.add_argument('--annotation_folder', type=str,default='/home/data/m2_annotations')
+    parser.add_argument('--ckpt_path', type=str,default='saved_models/saved_model.pth')
+
     args = parser.parse_args()
 
     print('DTNet Evaluation')
@@ -80,7 +82,7 @@ if __name__ == '__main__':
     model = Transformer(text_field.vocab.stoi['<bos>'], encoder, decoder).to(device)
 
     
-    data = torch.load('saved_models/Tra_best_test.pth')
+    data = torch.load(args.ckpt_path)
     model.load_state_dict(data['state_dict'])
 
     dict_dataset_test = test_dataset.image_dictionary({'image': image_field, 'text': RawField()})

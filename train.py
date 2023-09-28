@@ -3,7 +3,6 @@ from data import ImageDetectionsField, TextField, RawField
 from data import COCO, DataLoader
 import evaluation
 from evaluation import PTBTokenizer, Cider
-#from models.transformer import Transformer, MemoryAugmentedEncoder, MeshedDecoder, ScaledDotProductAttentionMemory
 from models.DTNet import Transformer, TransformerEncoder, TransformerDecoderLayer, \
     ScaledDotProductAttention
 import torch
@@ -332,16 +331,6 @@ if __name__ == '__main__':
             print('patience reached.')
             exit_train = True
 
-        # if patience == 5:
-        #     if not use_rl:
-        #         use_rl = True
-        #         switch_to_rl = True
-        #         patience = 0
-        #         optim = Adam(model.parameters(), lr=5e-6)
-        #         print("Switching to RL")
-        #     else:
-        #         print('patience reached.')
-        #         exit_train = True
 
         if switch_to_rl and not best:
             data = torch.load('saved_models/%s_best.pth' % args.exp_name)
