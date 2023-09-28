@@ -19,7 +19,7 @@ Dynamic Transformer Network (DTNet) is a model to genrate discriminative yet acc
 
 ## News
 
-- 2023.09.29: Released code
+- 2023.09.28: Released code
 
 
 ## Environment setup
@@ -29,7 +29,7 @@ Please refer to [meshed-memory-transformer](https://github.com/aimagelab/meshed-
 ## Data preparation
 
 * **Annotation**. Download the annotation file [annotation.zip](https://drive.google.com/file/d/1i8mqKFKhqvBr8kEp3DbIh9-9UNAfKGmE/view?usp=sharing). Extarct and put it in the project root directory.
-* **Feature**. You can download our ResNeXt-101 feature (hdf5 file) [here](https://stuxmueducn-my.sharepoint.com/:u:/g/personal/yiweima_stu_xmu_edu_cn/EaDasDMk45BFnLBFGFBAFvkB_xKBmZzqtUPzGi9M2RfrUA?e=ex7hgU) and ResNeXT-152 feature (hdf5 file) [here](). 
+* **Feature**. You can download our ResNeXt-101 feature (hdf5 file) [here](https://stuxmueducn-my.sharepoint.com/:u:/g/personal/yiweima_stu_xmu_edu_cn/EaDasDMk45BFnLBFGFBAFvkB_xKBmZzqtUPzGi9M2RfrUA?e=ex7hgU) and ResNeXT-152 feature (hdf5 file) [here](https://stuxmueducn-my.sharepoint.com/:u:/g/personal/yiweima_stu_xmu_edu_cn/EYRgOFC6JR5DmldgJvA53jcBDgLXh_bJt9tH0cEop1FU5w?e=B6QiHy). 
 * **evaluation**. Download the evaluation tools [here](https://stuxmueducn-my.sharepoint.com/:u:/g/personal/yiweima_stu_xmu_edu_cn/EYK5z8rM6PRLmqG0amlvmHkB3JdpbyxDAdX-9-PgBI65zg?e=CeEf9C). Extarct and put it in the project root directory.
 
 ## Training
