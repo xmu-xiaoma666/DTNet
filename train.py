@@ -161,7 +161,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     print(args)
 
-    print('DTNetTraining')
+    print('DTNet Training')
     ia=ImageAugmentation()
 
     writer = SummaryWriter(log_dir=os.path.join(args.logs_folder, args.exp_name))
