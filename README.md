@@ -77,6 +77,23 @@ python eval.py --batch_size 50 --exp_name DTNet --features_path /home/data/coco_
     Path Visualization.
 </p>
 
+
+
+
 ## Acknowledgements
 - Thanks the [meshed-memory-transformer](https://github.com/aimagelab/meshed-memory-transformer).
 - Thanks the amazing work of [grid-feats-vqa](https://github.com/facebookresearch/grid-feats-vqa). 
+
+## Citations
+```
+@ARTICLE{ma2024image,
+  author={Ma, Yiwei and Ji, Jiayi and Sun, Xiaoshuai and Zhou, Yiyi and Hong, Xiaopeng and Wu, Yongjian and Ji, Rongrong},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={Image Captioning via Dynamic Path Customization}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-15},
+  keywords={Routing;Visualization;Transformers;Adaptation models;Task analysis;Feature extraction;Semantics;Dynamic network;image captioning;input-sensitive;transformer},
+  doi={10.1109/TNNLS.2024.3409354}}
+```
